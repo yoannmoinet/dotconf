@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dotconf by yoannmoinet</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dotconf</h1>
+        <p>:ring: One config, to rule them all.</p>
+
+        <p class="view"><a href="https://github.com/yoannmoinet/dotconf">View the Project on GitHub <small>yoannmoinet/dotconf</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/yoannmoinet/dotconf/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/yoannmoinet/dotconf/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/yoannmoinet/dotconf">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="./media/dotconf_med.png" alt="logo"></p>
+
+<blockquote>
+<p>One file, to rule them all.</p>
+</blockquote>
+
+<h2>
+<a id="-" class="anchor" href="#-" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://npmjs.org/package/dotconf"><img src="https://img.shields.io/npm/v/dotconf.svg?style=flat" alt="npm version"></a> <a href=""><img src="https://img.shields.io/badge/status-alpha-red.svg?style=flat" alt="status"></a>
+</h2>
+
+<p><code>dotconf</code> will archive all your <code>.file|.directory</code> into <strong>one single</strong> <code>.conf</code>.</p>
+
+<p>It will extract them when needed (advised in <code>npm postinstall</code>).</p>
+
+<p><img src="./media/demo.gif" alt="example"></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># Locally in your project [advised]</span>
+npm i dotconf --save
+<span class="pl-c"># Or globally</span>
+npm i dotconf -g</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-shell"><pre>dotconf [OPTIONS] [ARGS]</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options:</h2>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># Actions</span>
+-a,     --archive                   Archive your files
+-e,     --extract                   Extract your files
+
+<span class="pl-c"># Options</span>
+
+-d,     --destination      [STRING] Destination of the archive
+<span class="pl-c"># Default is .file</span>
+-p,     --pattern          [STRING] Pattern to get file files
+<span class="pl-c"># Default is .*</span>
+-s,     --safe             [BOOL]   Execute <span class="pl-k">in</span> safe mode
+<span class="pl-c"># Default is true</span>
+        --safeDestination  [STRING] Destination of the safe storage
+<span class="pl-c"># Default is .tempDotConf</span>
+-i,     --ignore           [ARRAY]  What to ignore
+<span class="pl-c"># Default is .git*,node_modules/**,.file,.tempDotConf/**</span>
+
+<span class="pl-c"># CLI related</span>
+
+-k,     --no-color                  Omit color from output
+        --debug                     Show debug information
+-v,     --version                   Display the current version
+-h,     --help                      Display <span class="pl-c1">help</span> and usage details</pre></div>
+
+<p>By default, options can be read in the <code>package.json</code> under <code>dotconf</code> object.</p>
+
+<div class="highlight highlight-source-json"><pre><span class="pl-s"><span class="pl-pds">"</span>dotconf<span class="pl-pds">"</span></span>: {
+    <span class="pl-s"><span class="pl-pds">"</span>destination<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>.file<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>safeDestination<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>.tempDotConf<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>safe<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>pattern<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>.*<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>ignore<span class="pl-pds">"</span></span>: [
+        <span class="pl-s"><span class="pl-pds">"</span>.git*<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>node_modules/**<span class="pl-pds">"</span></span> ,
+        <span class="pl-s"><span class="pl-pds">"</span>.file<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>.tempDotConf/**<span class="pl-pds">"</span></span>
+    ]
+}</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/yoannmoinet">yoannmoinet</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
