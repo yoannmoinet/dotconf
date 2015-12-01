@@ -1,0 +1,51 @@
+{
+  "name": "dotconfig",
+  "version": "0.0.1",
+  "description": ":ring: One config to rule them all.",
+  "main": "cli.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoannmoinet/dotconfig.git"
+  },
+  "keywords": [
+    "config",
+    "dotfile",
+    "dot"
+  ],
+  "author": "Yoann Moinet <yo@nnmoi.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoannmoinet/dotconfig/issues"
+  },
+  "homepage": "https://github.com/yoannmoinet/dotconfig#readme",
+  "dependencies": {
+    "cli": "^0.11.1",
+    "fs-extra": "^0.26.2",
+    "glob": "^6.0.1",
+    "rimraf": "^2.4.4"
+  },
+  "bin": {
+    "dotconfig": "cli.js"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.2",
+    "expect.js": "^0.3.1",
+    "jscs": "^2.6.0",
+    "mocha": "^2.3.4"
+  },
+  "dotconfig": {
+    "destination": ".config",
+    "safeDestination": ".tempDotConfig",
+    "safe": true,
+    "pattern": ".*",
+    "ignore": [
+      ".git*",
+      "node_modules/**" ,
+      ".config",
+      ".tempDotConfig/**"
+    ]
+  }
+}

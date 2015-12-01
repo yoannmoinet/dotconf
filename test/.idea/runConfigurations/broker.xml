@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="broker" type="NodeJSConfigurationType" factoryName="Node.js" folderName="broker" singleton="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="broker.js" working-dir="$PROJECT_DIR$/src/services/broker">
+    <RunnerSettings RunnerId="Basic" />
+    <RunnerSettings RunnerId="NodeJS.debug" />
+    <RunnerSettings RunnerId="NodeJS.run" />
+    <RunnerSettings RunnerId="debuggableProgram" />
+    <ConfigurationWrapper RunnerId="Basic" />
+    <ConfigurationWrapper RunnerId="NodeJS.debug" />
+    <ConfigurationWrapper RunnerId="NodeJS.run" />
+    <ConfigurationWrapper RunnerId="debuggableProgram" />
+    <method />
+  </configuration>
+</component>

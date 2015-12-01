@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug via SSH tunnel" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+    <node-js-remote-debug />
+    <RunnerSettings RunnerId="NodeJS.debug" />
+    <ConfigurationWrapper RunnerId="NodeJS.debug" />
+    <method />
+  </configuration>
+</component>

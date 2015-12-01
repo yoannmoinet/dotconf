@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="user" type="NodeJSConfigurationType" factoryName="Node.js" folderName="user" singleton="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="user.js" working-dir="$PROJECT_DIR$/src/services/user">
+    <RunnerSettings RunnerId="NodeJS.debug" />
+    <RunnerSettings RunnerId="NodeJS.run" />
+    <ConfigurationWrapper RunnerId="NodeJS.debug" />
+    <ConfigurationWrapper RunnerId="NodeJS.run" />
+    <method />
+  </configuration>
+</component>

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="ProdMgmt" pattern="file:*.js/&amp;&amp;!file:node_modules//*&amp;&amp;!file:*/node_modules//*&amp;&amp;!file:*/_web//*&amp;&amp;!file:*/doc//*&amp;&amp;!file:*/build//*&amp;&amp;!file:*/tests//*&amp;&amp;!file:*/public/lib//*&amp;&amp;!file:tools//*" />
+</component>

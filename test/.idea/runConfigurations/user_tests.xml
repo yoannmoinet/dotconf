@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="user.tests" type="NodeJSConfigurationType" factoryName="Node.js" folderName="user" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="node_modules/jasmine-node/bin/jasmine-node" application-parameters="tests --color" working-dir="$PROJECT_DIR$/src/services/user">
+    <RunnerSettings RunnerId="NodeJS.debug" />
+    <RunnerSettings RunnerId="NodeJS.run" />
+    <ConfigurationWrapper RunnerId="NodeJS.debug" />
+    <ConfigurationWrapper RunnerId="NodeJS.run" />
+    <method />
+  </configuration>
+</component>
