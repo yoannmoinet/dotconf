@@ -39,7 +39,7 @@
   "dotconfig": {
     "destination": ".config",
     "safeDestination": ".tempDotConfig",
-    "safe": true,
+    "safe": false,
     "pattern": ".*",
     "ignore": [
       ".git*",
