@@ -58,9 +58,9 @@ cli.main(function (args, opts) {
     };
     console.log(JSON.stringify(args), JSON.stringify(opts));
     if (opts.archive) {
-        archive(args, options, log);
+        archive(args, opts, log);
     }
     if (opts.extract) {
-        extract(args, options, log);
+        extract(args, opts, log);
     }
 });
