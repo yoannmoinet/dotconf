@@ -31,8 +31,8 @@ cli.parse({
     safe: [
         's',
         'Execute in safe mode',
-        true,
-        true
+        'bool',
+        options.safe
     ],
     safeDestination: [
         null,
