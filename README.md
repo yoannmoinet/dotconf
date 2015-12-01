@@ -12,6 +12,15 @@ It will extract them when needed (advised in `npm postinstall`).
 
 ![example](./media/demo.gif)
 
+## Installation
+
+```bash
+# Locally in your project [advised]
+npm i dotconf --save
+# Or globally
+npm i dotconf -g
+```
+
 ## Usage
 
 ````bash
