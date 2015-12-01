@@ -56,7 +56,7 @@ cli.main(function (args, opts) {
         info: cli.info,
         ok: cli.ok
     };
-    console.log(JSON.stringify(args), JSON.stringify(opts));
+
     if (opts.archive) {
         archive(args, opts, log);
     }
