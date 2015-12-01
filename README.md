@@ -6,6 +6,8 @@
 
 It will extract them when needed (advised in `npm postinstall`).
 
+![example](./media/demo.gif)
+
 ## Usage
 
 ````bash
