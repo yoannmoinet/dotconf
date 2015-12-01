@@ -1,26 +1,26 @@
 {
-  "name": "dotconfig",
-  "version": "0.0.1",
-  "description": ":ring: One config to rule them all.",
+  "name": "dotconf",
+  "version": "0.0.2",
+  "description": "One file to rule them all.",
   "main": "cli.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoannmoinet/dotconfig.git"
+    "url": "git+https://github.com/yoannmoinet/dotconf.git"
   },
   "keywords": [
-    "config",
+    "file",
     "dotfile",
     "dot"
   ],
   "author": "Yoann Moinet <yo@nnmoi.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yoannmoinet/dotconfig/issues"
+    "url": "https://github.com/yoannmoinet/dotconf/issues"
   },
-  "homepage": "https://github.com/yoannmoinet/dotconfig#readme",
+  "homepage": "https://github.com/yoannmoinet/dotconf#readme",
   "dependencies": {
     "cli": "^0.11.1",
     "fs-extra": "^0.26.2",
@@ -28,7 +28,7 @@
     "rimraf": "^2.4.4"
   },
   "bin": {
-    "dotconfig": "cli.js"
+    "dotconf": "cli.js"
   },
   "devDependencies": {
     "eslint": "^1.10.2",
@@ -36,16 +36,16 @@
     "jscs": "^2.6.0",
     "mocha": "^2.3.4"
   },
-  "dotconfig": {
-    "destination": ".config",
-    "safeDestination": ".tempDotConfig",
+  "dotconf": {
+    "destination": ".conf",
+    "safeDestination": ".tempDotConf",
     "safe": false,
     "pattern": ".*",
     "ignore": [
       ".git*",
       "node_modules/**" ,
-      ".config",
-      ".tempDotConfig/**"
+      ".file",
+      ".tempDotConf/**"
     ]
   }
 }

@@ -4,17 +4,17 @@ var cli = require('cli').enable('status', 'glob', 'version');
 var archive = require('./lib/archive');
 var extract = require('./lib/extract');
 var pkg = require('./package.json');
-var options = require('./lib/options').get(pkg.dotconfig);
+var options = require('./lib/options').get(pkg.dotconf);
 cli.setApp(pkg.name, pkg.version);
 
 cli.parse({
     archive: [
         'a',
-        'Archive your configs'
+        'Archive your files'
     ],
     extract: [
         'e',
-        'Extract your configs'
+        'Extract your files'
     ],
     destination: [
         'd',
@@ -24,7 +24,7 @@ cli.parse({
     ],
     pattern: [
         'p',
-        'Pattern to get config files',
+        'Pattern to get files',
         'string',
         options.pattern
     ],

@@ -1,8 +1,12 @@
-![logo](./media/dotconfig_450.png)
+![logo](./media/dotconf_med.png)
 
-> One config, to rule them all.
+> One file, to rule them all.
 
-`dotconfig` will archive all your `.files/directories` into one `.config`.
+
+
+---
+
+`dotconf` will archive all your `.file|.directory` into **one single** `.conf`.
 
 It will extract them when needed (advised in `npm postinstall`).
 
@@ -11,27 +15,27 @@ It will extract them when needed (advised in `npm postinstall`).
 ## Usage
 
 ````bash
-dotconfig [OPTIONS] [ARGS]
+dotconf [OPTIONS] [ARGS]
 ```
 
 ## Options:
 ```bash
 # Actions
--a,     --archive                   Archive your configs
--e,     --extract                   Extract your configs
+-a,     --archive                   Archive your files
+-e,     --extract                   Extract your files
 
 # Options
 
 -d,     --destination      [STRING] Destination of the archive
-# Default is .config
--p,     --pattern          [STRING] Pattern to get config files
+# Default is .file
+-p,     --pattern          [STRING] Pattern to get file files
 # Default is .*
 -s,     --safe             [BOOL]   Execute in safe mode
 # Default is true
         --safeDestination  [STRING] Destination of the safe storage
-# Default is .tempDotConfig
+# Default is .tempDotConf
 -i,     --ignore           [ARRAY]  What to ignore
-# Default is .git*,node_modules/**,.config,.tempDotConfig/**
+# Default is .git*,node_modules/**,.file,.tempDotConf/**
 
 # CLI related
 
@@ -41,19 +45,19 @@ dotconfig [OPTIONS] [ARGS]
 -h,     --help                      Display help and usage details
 ```
 
-By default, options can be read in the `package.json` under `dotconfig` object.
+By default, options can be read in the `package.json` under `dotconf` object.
 
 ```json
-"dotconfig": {
-    "destination": ".config",
-    "safeDestination": ".tempDotConfig",
+"dotconf": {
+    "destination": ".file",
+    "safeDestination": ".tempDotConf",
     "safe": true,
     "pattern": ".*",
     "ignore": [
         ".git*",
         "node_modules/**" ,
-        ".config",
-        ".tempDotConfig/**"
+        ".file",
+        ".tempDotConf/**"
     ]
 }
 ```

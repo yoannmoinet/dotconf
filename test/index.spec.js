@@ -1,4 +1,4 @@
-describe('dotconfig', function () {
+describe('dotconf', function () {
     'use strict';
     var options = require('../lib/options.js');
     var archive = require('../lib/archive.js');
@@ -10,14 +10,14 @@ describe('dotconfig', function () {
     });
 
     after(function () {
-        // Delete .config and .tempDotConfig
+        // Delete .conf and .tempDotConf
     });
 
-    it('should overwrite configs with those passed as arguments', function () {
+    it('should overwrite files with those passed as arguments', function () {
 
     });
 
-    it('should overwrite configs with those passed as flags', function () {
+    it('should overwrite files with those passed as flags', function () {
 
     });
 
