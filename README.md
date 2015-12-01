@@ -2,8 +2,7 @@
 
 > One file, to rule them all.
 
-
-
+[![npm version](https://img.shields.io/npm/v/dotconf.svg?style=flat)](https://npmjs.org/package/dotconf) [![status](https://img.shields.io/badge/status-alpha-red.svg?style=flat)]()
 ---
 
 `dotconf` will archive all your `.file|.directory` into **one single** `.conf`.
