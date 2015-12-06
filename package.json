@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/yoannmoinet/dotconf#readme",
   "dependencies": {
-    "chai": "^3.4.1",
     "cli": "^0.11.1",
     "fs-extra": "^0.26.2",
     "glob": "^6.0.1"
