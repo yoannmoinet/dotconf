@@ -64,9 +64,9 @@ cli.main(function (args, opts) {
     };
 
     if (opts.archive) {
-        archive(args, opts, log);
+        archive(opts, log);
     }
     if (opts.extract) {
-        extract(args, opts, log);
+        extract(opts, log);
     }
 });
