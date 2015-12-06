@@ -1,6 +1,6 @@
 {
   "name": "dotconf",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "One file to rule them all.",
   "main": "cli.js",
   "scripts": {
