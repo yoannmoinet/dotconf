@@ -28,6 +28,12 @@ cli.parse({
         'string',
         options.pattern
     ],
+    cwd: [
+        'c',
+        'Change the working directory',
+        'string',
+        options.cwd
+    ],
     safe: [
         's',
         'Execute in safe mode',
