@@ -4,6 +4,7 @@
     "disallowSpacesInFunctionExpression": null,
     "disallowSpacesInFunctionDeclaration": null,
     "disallowMultipleVarDecl": "exceptUndefined",
+    "maximumLineLength": 140,
     "validateQuoteMarks": {
         "mark": "'",
         "escape": true
