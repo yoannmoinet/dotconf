@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.1",
-    "chai-fs": "^0.1.0",
+    "chai-fs": "jenius/chai-fs",
     "eslint": "^1.10.2",
     "jscs": "^2.6.0",
     "mocha": "^2.3.4"
