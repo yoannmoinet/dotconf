@@ -2,7 +2,7 @@
   "name": "dotconf",
   "version": "0.0.5",
   "description": "One file to rule them all.",
-  "main": "cli.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -23,8 +23,10 @@
   "homepage": "https://github.com/yoannmoinet/dotconf#readme",
   "dependencies": {
     "cli": "^0.11.1",
+    "detect-installed": "^1.0.4",
     "fs-extra": "^0.26.2",
-    "glob": "^6.0.1"
+    "glob": "^6.0.1",
+    "inquirer": "^0.11.1"
   },
   "bin": {
     "dotconf": "cli.js"

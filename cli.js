@@ -1,10 +1,31 @@
 #! /usr/bin/env node
 
 var cli = require('cli').enable('status', 'glob', 'version');
+
 var archive = require('./lib/archive');
 var extract = require('./lib/extract');
+var load = require('./lib/load');
+var save = require('./lib/save');
+
+var h = require('./lib/helpers');
+
 var pkg = require('./package.json');
+// If we're global we populate the global default config.
+pkg = h.isGlobal ? {
+    version: pkg.version,
+    name: pkg.name,
+    dotconf: {
+        destination: '.global',
+        safe: false,
+        pattern: '.*',
+        cwd: h.home
+    }
+} : pkg;
+
+// Get options with overwrites
 var options = require('./lib/options').get(pkg.dotconf);
+
+// Configure the CLI
 cli.setApp(pkg.name, pkg.version);
 
 cli.parse({
@@ -15,6 +36,14 @@ cli.parse({
     extract: [
         'e',
         'Extract your files'
+    ],
+    save: [
+        's',
+        'Save a new global config'
+    ],
+    load: [
+        'l',
+        'Load a global config'
     ],
     destination: [
         'd',
@@ -65,8 +94,11 @@ cli.main(function (args, opts) {
 
     if (opts.archive) {
         archive(opts, log);
-    }
-    if (opts.extract) {
+    } else if (opts.extract) {
         extract(opts, log);
+    } else if (opts.save) {
+        save(opts, log);
+    } else if (opts.load) {
+        load(opts, log);
     }
 });

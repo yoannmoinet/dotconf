@@ -176,6 +176,14 @@ describe('dotconf', function () {
         });
     });
 
+    describe('save', function () {
+        it('should save configuration in the home folder', function () {});
+    });
+
+    describe('load', function () {
+        it('should load files that are saved in the home folder', function () {});
+    });
+
     describe('errors', function () {
         var fn = function () {};
         var fatalCalled;
