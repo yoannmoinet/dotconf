@@ -22,11 +22,12 @@ npm i dotconf -g
 
 ## Usage
 
-````bash
+```bash
 dotconf [OPTIONS] [ARGS]
 ```
 
-## Options:
+## Options
+
 ```bash
 # Actions
 -a,     --archive                   Archive your files
